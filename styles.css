@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root {
+    --clr-brightOrange: hsl(31, 77%, 52%);
+    --clr-darkCyan: hsl(184, 100%, 22%);
+    --clr-veryDarkCyan: hsl(179, 100%, 13%);
+    --clr-transparentWhite: hsla(0, 0%, 100%, 0.75); /*Paragraphs*/
+    --clr-veryLightGray: hsl(0, 0%, 95%); /*background, headings, buttons*/
+
+    --fz-default: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Big Shoulders Display', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-veryLightGray);
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: var(--fz-default);
+    letter-spacing: 1px;
+    line-height: 20px;
+    color: var(--clr-transparentWhite);
+}
+
+@media (max-width: 1500px) {
+
+    .container {
+        transform: scale(.65);
+        flex-direction: column !important;
+        height: 138% !important;
+        width: 340px !important;
+        align-items: center !important;
+        justify-content: center !important;
+        border-radius: .4rem !important;
+        overflow: hidden !important;
+    }
+
+    .container div {
+        gap: 2rem !important;
+        padding: 3rem !important;
+    }
+}
+
+.container {
+    color: var(--clr-veryLightGray);
+    display: flex;
+    height: 55%;
+    width: 53%;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.container div {
+    padding: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+}
+
+.sedans {
+    background-color: var(--clr-brightOrange);
+}
+
+.suvs {
+    background-color: var(--clr-darkCyan);
+}
+
+.luxury {
+    background-color: var(--clr-veryDarkCyan);
+}
+
+h1 {
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+    font-size: 45px;
+}
+
+button {
+    font-size: 15px;
+    height: 3rem;
+    width: 9rem;
+    background-color: var(--clr-veryLightGray);
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 2rem;
+    border: 1px solid var(--clr-veryLightGray);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--clr-veryLightGray) !important;
+}
+
+.sedans button {
+    color: var(--clr-brightOrange);
+}
+
+.suvs button {
+    color: var(--clr-darkCyan);
+}
+
+.luxury button {
+    color: var(--clr-veryDarkCyan);
+}
